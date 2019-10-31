@@ -13,7 +13,8 @@ func init() {
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		username := r.FormValue("username")
 		html.ExecuteTemplate(w, "main.html", nil)
 	})
-	http.ListenAndServe(":8000", nil)
+	http.ListenAndServe(":8080", nil)
 }
