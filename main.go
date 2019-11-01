@@ -36,7 +36,7 @@ func main() {
 		getJSON("https://api.github.com/users/"+username, user)
 		html.ExecuteTemplate(w, "main.html", nil)
 		if len(username) != 0 {
-			fmt.Fprintf(w, "Name: %s\nLogin: %s\nID: %d\nCompany: %s\nBlog: %s\nLocation: %s\nEmail: %s\nHireable: %t\nBio: %s\nPublic Repositories: %s\nPublic Gists: %s\nFollowers: %d\nFollowing: %d", user.Name, user.Login, user.ID, user.Company, user.Blog, user.Location, user.Email, user.Hireable, user.Bio, user.PublicRepos, user.PublicGists, user.Followers, user.Following)
+			fmt.Fprintf(w, "Name: %s\nLogin: %s\nID: %d\nCompany: %s\nBlog: %s\nLocation: %s\nEmail: %s\nHireable: %t\nBio: %s\nPublic Repositories: %s\nPublic Gists: %s\nFollowers: %d\nFollowing: %d\n", user.Name, user.Login, user.ID, user.Company, user.Blog, user.Location, user.Email, user.Hireable, user.Bio, user.PublicRepos, user.PublicGists, user.Followers, user.Following)
 		}
 
 	})
