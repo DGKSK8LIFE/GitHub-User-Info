@@ -1,2 +1,2 @@
 # Github User Info 
-A website that shows account information about github users; uses github api
+A website that shows information about github users using github api.
