@@ -1,3 +1,3 @@
 # Github User Info 
-A website that shows general user information with github api.
+A website that shows account information about desired users using Github API.
 ![Demo](demo.gif)
